@@ -9,7 +9,7 @@
         label {width: 100px; display: inline-block; vertical-align:top; }
         div {margin:auto; }
         .orderinfo {  width: 250px; }
-        input[type='number'] { width:60px; }		
+        input[type='number'] { width:60px; }
 		ul > li { list-style-type:none; }
     </style>
 </head>
@@ -17,12 +17,59 @@
 
 	<pre>
 		작업 순서
-		 개인 정보 
+		 개인 정보
          배송지 정보
 		 주문 정보
 		 주문하기
 		  다시작성 : form 입력 값 초기화
 	</pre>
     <h1>상품 주문서</h1>
+<form>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <div>
+                <label for="">이름</label>
+                <input type="text" name="" id="" placeholder="이름을 입력하세요">
+            </div>
+            <div>
+                <label for="">연락처</label>
+                <input type="text" name="" id="" placeholder="연락처를 입력하세요">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <div>
+                <label for="">주소</label>
+                <input type="text" name="" id="" required>
+            </div>
+            <div>
+                <label for="">전화번호</label>
+                <input type="text" name="" id="" required>
+            </div>
+            <div>
+                <label for="">메모</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>주문 정보</legend>
+            <div>
+                <input type="checkbox" name="" id="" checked>과테말라 안티구아(100g)
+                <input type="number" name="" id="">개
+            </div>
+            <div>
+                <input type="checkbox" name="" id="">인도네시아 만텔링(100g)
+                <input type="number" name="" id="">개
+            </div>
+            <div>
+                <input type="checkbox" name="" id="">탐라는도다 블렌딩(100g)
+                <input type="number" name="" id="">개
+            </div>
+        </fieldset>
+    <div>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="다시작성">
+    </div>
+</form>
 </body>
 </html>
