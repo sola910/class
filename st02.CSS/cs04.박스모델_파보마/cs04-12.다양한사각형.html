@@ -5,6 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>박스모델</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        div {margin: 20px;}
+        div[class] {
+            border: 5px solid black;
+            width: 200px; height: 100px;
+            background-color: white;
+            display: inline-block;
+        }
+
+        #borderstyle .box2 {
+            border: 5px dotted black;
+        }
+        #borderstyle .box3 {
+            border: 5px dashed black;
+        }
+        #borderstyle .box4, #borderstyle .box5 {
+            /* border-top-style: solid;
+            border-right-style: dotted;
+            border-bottom-style: dashed;
+            border-left-style: double; */
+            border-style: solid dotted dashed double;
+        }
+
+        #bordercolor .box1 {
+            border-color: red;}
+        #bordercolor .box2 {
+            border-top-color: red;
+            border-bottom-color: red;
+            border-right-color: blue;
+            border-left-color: blue;
+        }
+        #bordercolor .box3 {
+            border-color: red blue;
+        }
+        #bordercolor .box4 , #bordercolor .box5 {
+            border-top-color: black;
+            border-bottom-color: blue;
+            border-right-color: red;
+            border-left-color: yellow;
+        }
+
+        #borderwidth .box1 {
+            border-width: 3px;
+        }
+        #borderwidth .box2 {
+            border-width: 5px 20px;
+        }
+        #borderwidth .box3 {
+            border-width: 5px 20px;
+        }
+        #borderwidth .box4 {
+            border-width: 10px 20px 30px 40px;
+        }
+        #borderwidth .box5 {
+            border-top-width: 10px;
+            border-right-width: 20px;
+            border-bottom-width: 30px;
+            border-left-width: 40px;
+        }
+    </style>
 </head>
 <body>
     <div id="borderstyle">
@@ -15,7 +76,7 @@
         <div class="box4"> 4면이 다른 border style, solid, dotted, dashed, double</div>
         <div class="box5"> 4면이 다른 border style, solid, dotted, dashed, double</div>
     </div>
-
+<br>
     <div id="bordercolor">
         <h2>border color</h2>
         <div class="box1"> </div>
@@ -35,4 +96,4 @@
     </div>
 
 </body>
-</html>
+</html>
