@@ -5,6 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML5 Basic Page</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        * {padding: 0; margin: 0;}
+        a:link {text-decoration: none;}
+        li {list-style: none;}
+
+        body {width: 960px; margin: auto; background: gainsboro;}
+
+        #page-wrapper {background-color: white;
+            margin: 50px 50px 50px 50px; padding: 10px 20px;
+        border-radius: 10px;}
+
+        header {margin: 50px;}
+        #main-header h1 {font-weight: bolder;}
+        #main-header h2 {font-size: 15px; color: gray; font-weight: bolder;}
+
+        #main-navigation {
+            border-top: 1px solid gray; border-bottom: 1px solid gray;
+            margin: 10px 0px; padding: 10px; height: 25px;}
+
+        .pull-left {float: left;}
+        .pull-right {float: right;}
+        #content {clear: both;}
+
+        .outer-menu-item {width:100px; display: inline-block}
+
+        .input-search, .input-search-submit {
+            border: 1px solid gray;
+            float: left;
+        }
+        .input-search{
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            height: 24px; width: 130px;
+            text-indent: 10px;
+            outline: 0px;
+        }
+        .input-search-submit {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            height: 26px; width: 50px;
+            margin-left: -1px;
+            font-size: 13px;
+        }
+        input:focus {border: 1px solid gray;}
+
+        #main-section {float: left; width: 80%}
+        #main-aside {float: right; width: 20%;}
+        #main-footer {
+            text-align: center;
+            border-top: 1px gray solid;
+            padding: 10px 0px;
+            margin: auto;}
+
+
+
+    </style>
 </head>
 <body>
     <div id="page-wrapper">
@@ -16,7 +73,7 @@
         </header>
         <nav id="main-navigation">
             <div class="pull-left">
-                <ul class="outer-menu">
+                <ul class="outer-menu" >
                     <li class="outer-menu-item">
                         <span class="menu-title">HTML5</span>
                         <ul class="inner-menu">
@@ -95,12 +152,14 @@
                 </div>
             </aside>
         </div>
+        <div style="clear: both;"></div>
         <footer id="main-footer">
             <a href="#">Created By Team-HeXagon</a>
         </footer>
     </div>
 </body>
-</html>
+</html>
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>

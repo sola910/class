@@ -5,6 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>배경 이미지</title>
+    <style>
+        * {padding: 0; margin: 0; box-sizing: content-box;}
+        #color {
+            background-color: aqua;
+        }
+        #color > div {
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            margin: 0px 50px 0 0;
+        }
+
+        body {background-image: url(./images/bg1.png);}
+        #clip > div {
+            border: dotted black 15px;
+            width: 30%;
+            display: inline-block;
+            background-color: lightblue;
+            margin: 20px; padding: 40px; }
+
+            #clip .bg1 {
+            background-clip: border-box;}
+            #clip .bg2 {
+            background-clip: padding-box;}
+            #clip .bg3 {
+            background-clip:content-box;}
+
+        #origin > div {
+            border: solid 25px #e8e8e8;
+            padding: 40px; margin: 20px;
+            width: 20%;
+            display: inline-block;
+            box-sizing: content-box;
+            background-color: aliceblue;
+            background-image: url(./images/bg5.png);
+            background-repeat: no-repeat;}
+        #origin > .bg1 {background-origin: border-box;}
+        #origin > .bg2 {background-origin: padding-box;}
+        #origin > .bg3 {background-origin: content-box;}
+
+        #position > div {
+            padding: 150px 0 20px 0 ; margin: 10px 0 0 0 ;
+            width: 700px; height: 150px;
+            box-sizing: content-box;
+            background-image: url(../images/bg2.jpg);
+            background-repeat: no-repeat;
+            }
+        #position > .bg1 {background-position: top left;}
+        #position > .bg2 {background-position: center center;}
+        #position > .bg3 {background-position: bottom left;}
+
+        #size > div {
+            border: 1px solid #000000;
+            margin: 0 20px;
+            width: 300px; height: 300px;
+            box-sizing: content-box;
+            background-image: url(../images/bg4.jpg);
+            background-repeat: no-repeat;
+            background-position: top left;
+            display: inline-block;
+            }
+        #size > .bg1 {background-size: auto;}
+        #size > .bg2 {background-size: 200px 150px;}
+        #size > .bg3 {background-size: 60% 40%;}
+        #size > .bg4 {background-size: contain}
+        #size > .bg5 {background-size: cover;}
+        #size > .bg6 {background-size: top 100% 100%;}
+
+    </style>
 </head>
 <body>
 
@@ -18,7 +86,7 @@
             카카오 매스의 함량에 따라 다크 초콜릿, 밀크 초콜릿, 화이트 초콜릿으로 구분한다.</p>
         </div>
     </div>
-        
+
     <div id="clip">
         <h2>background-clip</h2>
         <div class="bg1">
@@ -47,7 +115,7 @@
                 잘 알려져 있듯이 블루베리와 함께 대표적인 항산화 음식이기도 하다.
             </p>
         </div>
-    </div> <!--  <--- ::after  --> 
+    </div> <!--  <--- ::after  -->
 
     <div id="origin">
         <h2>background-origin</h2>
@@ -131,4 +199,4 @@
         <div class="bg6">배경 이미지 사이즈 : 100% 100%</div>
     </div>
 </body>
-</html>
+</html>

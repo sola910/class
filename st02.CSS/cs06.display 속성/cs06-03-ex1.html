@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>display 속성</title>
+    <style>
+        * {padding: 0; margin: 0; box-sizing: content-box;}
+        div > div {
+            border: 1px solid black;
+            width: 100px; height: 100px;
+            margin: 10px 20px 10px 10px;
+        }
+
+        .ex1 {
+            background-color: aqua;
+        }
+        .ex2  {
+            background-color: blueviolet;
+        }
+        .ex3  {
+            background-color: burlywood;
+        }
+
+        #float > div {float: left;}
+        #float::after {clear: both; display: block; content: ' ' ;}
+
+
+        #inlineblock > div {
+            display: inline-block;
+        }
+
+        #flex {display: inline-flex;}
+    </style>
 </head>
 <body>
 
@@ -29,4 +57,4 @@
         <div class="ex3">세번째</div>
     </div>
 </body>
-</html>
+</html>

@@ -5,9 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0; box-sizing: border-box;}
+        div {
+            border: 1px solid purple;
+            background-color: violet;
+            padding: 40px;
+        }
+        div > ul {
+            background-color: white;
+            padding: 20px 20px 20px 40px;
+            list-style: none
+        }
+
+        #float {padding: 20px 0 50px 0;}
+
+        #float > li   {float: left; : 5px; margin: 5px -15px 0px 40px; width: 50px; ;}
+        #display > li {display: inline-block; margin: 0 10px 0 0; width: 60px;}
+        #display > li > a {text-decoration: none;}
+        #float > li > a {text-decoration: none;}
+
+    </style>
 </head>
 <body>
-    
+
     <h2>CSS 적용 안된 것</h2>
     <ul>
         <li><a href="http://">메뉴1</a></li>
@@ -15,20 +36,24 @@
         <li><a href="http://">메뉴3</a></li>
     </ul>
     <hr>
-    
+
     <h2>float 적용한 경우</h2>
-    <ul id="float">
-        <li><a href="http://">메뉴1</a></li>
-        <li><a href="http://">메뉴2</a></li>
-        <li><a href="http://">메뉴3</a></li>
-    </ul> <!-- float 해제 -->
+<div >
+        <ul id="float">
+            <li ><a href="http://">메뉴1</a></li>
+            <li><a href="http://">메뉴2</a></li>
+            <li><a href="http://">메뉴3</a></li>
+        </ul>
+</div><!-- float 해제 -->
     <hr>
 
     <h2>display: inline-block; 적용한 경우</h2>
-    <ul  id="display">
-        <li><a href="http://">메뉴1</a></li>
-        <li><a href="http://">메뉴2</a></li>
-        <li><a href="http://">메뉴3</a></li>
-    </ul>
+<div>
+        <ul  id="display">
+            <li><a href="http://">메뉴1</a></li>
+            <li><a href="http://">메뉴2</a></li>
+            <li><a href="http://">메뉴3</a></li>
+        </ul>
+</div>
 </body>
 </html>
