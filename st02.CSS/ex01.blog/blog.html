@@ -9,7 +9,7 @@
     <style>
         * {padding: 0; margin: 0;}
         a:link {text-decoration: none;}
-        li {list-style: none;}
+        li {list-style: none; }
 
         body {width: 960px; margin: auto; background: gainsboro;}
 
@@ -29,7 +29,40 @@
         .pull-right {float: right;}
         #content {clear: both;}
 
-        .outer-menu-item {width:100px; display: inline-block}
+        /* 서브메뉴설정 */
+        .outer-menu-item {
+            float: left;
+            position: relative;
+            width: 100px; height: 45px;
+            text-align: center;
+            line-height: 45px;
+            margin-top: -10px;
+        }
+        .outer-menu-item:hover {
+            background-color: black;
+            color: white;
+        }
+        ul .outer-menu > li {
+            float: left; position: relative;}
+        ul.outer-menu::after {clear: both; display: block; content: ' ';}
+        ul.outer-menu> li > ul {display: none; position: absolute;}
+        ul.outer-menu> li:hover >ul {display: block;}
+
+        .inner-menu-item {
+            width: 100px; height: 35px;
+            text-align: center;
+            line-height: 35px;
+            background-color: white;
+
+            box-shadow: 0 2px 6px gray;
+        }
+        .inner-menu-item:hover {
+            background-color: gray; color: white;
+        }
+        .inner-menu-item > a {display: block; color:black}
+        .inner-menu-item:hover > a {color: white;}
+
+
 
         .input-search, .input-search-submit {
             border: 1px solid gray;

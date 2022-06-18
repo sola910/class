@@ -5,12 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        * {margin: 0 0 0 0; padding: 0 0 0 0; text-align: center; color: white;}
+        #wrap {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%; height: 100%;
+            margin: auto;
+        }
+        html , body {width: 100%; height: 100%;}
+        .header {
+            background-color: coral;
+            min-height: 80px;
+            width: 100%;
+        }
+        .header > h1 {
+            width: 100px;
+            height: 140px;
+            position: absolute;
+            top: 0; left: 0;
+            background-color: coral;
+        }
+
+        .slider_section {
+            width: 50%; height: calc (50% - 80px) ;
+            background-color: cornflowerblue;
+        }
+        .gallery_section {
+            width: 25%; height: calc (50% - 80px) ;
+            background-color: khaki;
+        }
+        .rankup_section {
+            width: 25%; height: calc (50% - 80px) ;
+            background-color: lightskyblue;}
+        .latest_post_section {
+            width: 30%; height: calc (50% - 80px) ;
+            background-color: rosybrown;
+        }
+        .popular_post_section {
+            width: 30%; height: calc (50% - 80px) ;
+            background-color: orange;
+        }
+        .banner_section{
+            width: 20%; height: calc (50% - 80px) ;
+            background-color: aqua;
+        }
+        .banner_box_01
+        .banner_box_02
+        
+        .social_section {
+            width: 20%; height: calc (50% - 80px) ;
+            background-color: hotpink;
+        }
+        .footer { width: 100%; height: 90px; background-color: grey;}
+
+
+    </style>
 </head>
 <body>
     <div id="wrap">
         <header class="header">
             <h1>1-1</h1>
-            <nav>1</nav>            
+            <nav>1</nav>
         </header>
         <section class="slider_section">2</section>
         <section class="gallery_section">3</section>
@@ -25,4 +82,4 @@
         <footer class="footer">9</footer>
     </div>
 </body>
-</html>
+</html>

@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>박스모델</title>
+    <style>
+        div {display: block;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px;
+        }
+
+        .box1 , .box2 {width: 100px; float: left;}
+        .box2::after {clear: both; display: block; content: ' ';}
+
+        .box1 {background-color: yellow;}
+        .box2 {background-color: aqua;}
+        .box3 {background-color: green;}
+        .box4 {background-color: blueviolet;}
+    </style>
 </head>
 <body>
     <div class="box1">박스1</div>
