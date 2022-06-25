@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>레이아웃 A</title>
+    <style>
+        html, body, #wrap {height: 100%;}
+        h1 {height: 50px; margin: 0; padding: 0;}
+        #header {
+            background-color: greenyellow;
+            height: 100px; box-sizing: border-box;
+        }
+        #content {
+            background-color: violet;
+            height: calc(100% - 250px); box-sizing: border-box;
+        }
+        #footer {
+            background-color: pink;
+            height: 100px; box-sizing: border-box;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,4 +42,4 @@
     </div>
 </body>
 
-</html>
+</html>

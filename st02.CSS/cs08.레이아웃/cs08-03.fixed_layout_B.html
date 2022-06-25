@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>레이아웃 B</title>
+    <style>
+        html, body,#wrap {height: 100%; width: 100%;}
+        #sidebar {
+            background-color: pink;
+            height: 100%; width: 30%;
+            float: left;
+        }
+        #right {float: right; height: 100%; width: 70%;}
+
+        #header {background-color: greenyellow; height: 100px;}
+        #content {background-color: violet; height: calc(100% - 200px);}
+        #footer {background-color: palevioletred; height: 100px;}
+
+    </style>
 </head>
 
 <body>
@@ -14,19 +28,20 @@
         <div id="sidebar">
             sidebar
         </div>
+        <div id="right">
+            <div id="header">
+                header
+            </div>
 
-        <div id="header">
-            header
-        </div>
+            <div id="content">
+                content
+            </div>
 
-        <div id="content">
-            content
-        </div>
-
-        <div id="footer">
-            footer
+            <div id="footer">
+                footer
+            </div>
         </div>
     </div>
 </body>
 
-</html>
+</html>

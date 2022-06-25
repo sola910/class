@@ -5,59 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>자식>자식>자식></title>
-    <style>
-        * {padding: 0; margin: 0;}
-
-        ul, li {list-style-type: none;}
-
-        a { text-decoration: none;}
-
-        div {margin: 100px 50px 0 100px;}
-
-        #menu2 > li {
-            float: left;
-            position: relative;
-        }
-        #menu2::after {
-            clear: both;
-            display: block;
-            content: ' ';
-        }
-
-        #menu2 > li > a {
-            display: block;
-            width: 150px; height: 30px;
-            border: 1px solid gray;
-            text-align: center;
-            line-height: 30px;
-        }
-
-        #menu2 > li > a:hover {
-            background-color: black;
-            color: white;
-        }
-
-        #menu2 >li > ul {display: none; position: absolute;}
-        #menu2 >li:hover > ul {display: block;}
-
-        #menu2 > li > ul > li > a {
-            display: block;
-            width: 150px; height: 30px;
-            border: 1px solid gray;
-            text-align: center;
-            line-height: 30px;
-            margin-top: -1px;
-        }
-        #menu2 > li > ul > li > a:hover {
-            background-color: gray;
-            color: white;
-        }
-
-        #menu2 > li.others {
-            margin-left: -1px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./dropmenu.css">
 </head>
 <body>
     <div>
